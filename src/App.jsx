@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Hero } from './assets/components/hero.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-      <div>
-
-   <h3 className="award winning app font-circular-web">Award</h3>
-      </div>
-  )
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Hero />
+      <section className="z-0 bg-amber-50 min-h-dvh" />
+    </main>
+  );
 }
 
-export default App
+export default App;
